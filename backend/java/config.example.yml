@@ -1,0 +1,59 @@
+# Configurações de exemplo para o Portfolio Backend Java
+# Copie este arquivo para application.yml e ajuste conforme necessário
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: portfolio-backend
+  
+  datasource:
+    url: jdbc:sqlite:../database/app.db
+    driver-class-name: org.sqlite.JDBC
+    
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    
+  cache:
+    type: simple
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging:
+  level:
+    com.portfolio: DEBUG
+    org.springframework.web: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# Configurações customizadas
+portfolio:
+  github:
+    username: Gabriell12321
+    api-url: https://api.github.com
+  analytics:
+    enabled: true
+    cache-duration: 3600
+  email:
+    from: portfolio@example.com
+    to: gabriel@example.com

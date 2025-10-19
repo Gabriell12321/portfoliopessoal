@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria - Gabriel Garcia</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="headerWrap">
+    <nav class="navBox">
+      <div class="logoBox">
+        <a href="index.html">
+          <h1>Gabriel Garcia</h1>
+        </a>
+      </div>
+      
+      <button class="menuToggle" id="menuToggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="navList" id="navList">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mais</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="certificacoes.html">Certificações</a></li>
+            <li><a href="galeria.html" class="active">Galeria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainBox">
+    <section class="gallerySection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Galeria de Projetos</h3>
+        <div class="galleryFilters">
+          <button class="filterBtn active" data-filter="all">Todos</button>
+          <button class="filterBtn" data-filter="web">Web</button>
+          <button class="filterBtn" data-filter="mobile">Mobile</button>
+          <button class="filterBtn" data-filter="ai">IA</button>
+          <button class="filterBtn" data-filter="automation">Automação</button>
+        </div>
+        <div class="gallery">
+          <div class="galleryItem" data-category="web">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Meus+Certificados" alt="Meus Certificados">
+              <div class="galleryOverlay">
+                <h4>Meus Certificados</h4>
+                <p>Interface limpa e organizada</p>
+                <div class="galleryTech">
+                  <span class="techTag">HTML</span>
+                  <span class="techTag">CSS</span>
+                </div>
+                <a href="https://github.com/Gabriell12321/Meus-Certificados" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="galleryItem" data-category="web">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Jardim+Cotoncio" alt="Jardim Cotoncio">
+              <div class="galleryOverlay">
+                <h4>Jardim Cotoncio</h4>
+                <p>Projeto Agrinho 2023</p>
+                <div class="galleryTech">
+                  <span class="techTag">HTML</span>
+                  <span class="techTag">CSS</span>
+                  <span class="techTag">JavaScript</span>
+                </div>
+                <a href="https://github.com/Gabriell12321/Jardimcotoncio-Projeto-AGRINHO2023" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="galleryItem" data-category="web">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Portfolio+SCSS" alt="Portfólio SCSS">
+              <div class="galleryOverlay">
+                <h4>Portfólio SCSS</h4>
+                <p>Design responsivo e moderno</p>
+                <div class="galleryTech">
+                  <span class="techTag">SCSS</span>
+                  <span class="techTag">HTML</span>
+                </div>
+                <a href="https://github.com/Gabriell12321/gabriel.github.io" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="galleryItem" data-category="automation">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Bot+Automatizado" alt="Bot Automatizado">
+              <div class="galleryOverlay">
+                <h4>Bot Automatizado</h4>
+                <p>Automação de processos</p>
+                <div class="galleryTech">
+                  <span class="techTag">JavaScript</span>
+                  <span class="techTag">Node.js</span>
+                </div>
+                <a href="https://github.com/Gabriell12321/BOT" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="galleryItem" data-category="ai">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Projeto+IA" alt="Projeto IA">
+              <div class="galleryOverlay">
+                <h4>Projeto IA</h4>
+                <p>Machine Learning e algoritmos</p>
+                <div class="galleryTech">
+                  <span class="techTag">Python</span>
+                  <span class="techTag">AI/ML</span>
+                </div>
+                <a href="https://github.com/Gabriell12321/IA" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="galleryItem" data-category="web">
+            <div class="galleryImage">
+              <img src="https://via.placeholder.com/400x300/1a1a1a/ffffff?text=Portfolio+Atual" alt="Portfólio Atual">
+              <div class="galleryOverlay">
+                <h4>Portfólio Atual</h4>
+                <p>Múltiplas funcionalidades</p>
+                <div class="galleryTech">
+                  <span class="techTag">TypeScript</span>
+                  <span class="techTag">HTML</span>
+                  <span class="techTag">CSS</span>
+                </div>
+                <a href="https://github.com/Gabriell12321" class="galleryLink">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="videoSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Apresentação em Vídeo</h3>
+        <div class="videoContainer">
+          <div class="videoWrapper">
+            <video controls poster="https://via.placeholder.com/800x450/1a1a1a/ffffff?text=Video+Thumbnail">
+              <source src="apresentacao.mp4" type="video/mp4">
+              Seu navegador não suporta vídeos HTML5.
+            </video>
+            <div class="videoOverlay">
+              <h4>Apresentação Pessoal</h4>
+              <p>Conheça mais sobre minha jornada e projetos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerWrap">
+    <div class="footerContent">
+      <p>&copy; 2025 Gabriel Garcia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="ts/main.ts"></script>
+</body>
+</html>

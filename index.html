@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Garcia - Desenvolvedor</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="headerWrap">
+    <nav class="navBox">
+      <div class="logoBox">
+        <a href="index.html">
+          <h1>Gabriel Garcia</h1>
+        </a>
+      </div>
+      
+      <button class="menuToggle" id="menuToggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="navList" id="navList">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mais</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="certificacoes.html">Certificações</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainBox">
+    <section class="heroSection">
+      <div class="heroContent">
+        <div class="heroProfile">
+          <div class="profilePhoto fade-in">
+            <img src="img/foto.jfif" alt="Gabriel Garcia" class="profileImg">
+          </div>
+          <div class="heroInfo slide-in-left">
+            <h2 class="heroTitle">Gabriel Garcia</h2>
+            <h3 class="heroSubtitle">Desenvolvedor Full Stack</h3>
+            <p class="heroText">
+              Especialista em TypeScript, Python e Rust. 
+              Trabalhando com soluções modernas e eficientes.
+            </p>
+            <div class="heroButtons">
+              <a href="projetos.html" class="btnPrimary">Ver Projetos</a>
+              <a href="contato.html" class="btnSecondary">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="socialSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Atividade Recente</h3>
+        <div class="githubSection">
+          <div class="githubHeader">
+            <h4>GitHub</h4>
+            <a href="https://github.com/Gabriell12321" target="_blank" class="githubLink">Ver Perfil Completo</a>
+          </div>
+          <div class="githubStats">
+            <div class="statCard">
+              <span class="statNumber">46</span>
+              <span class="statLabel">Repositórios</span>
+            </div>
+            <div class="statCard">
+              <span class="statNumber">4</span>
+              <span class="statLabel">Stars</span>
+            </div>
+            <div class="statCard">
+              <span class="statNumber">7</span>
+              <span class="statLabel">Seguidores</span>
+            </div>
+            <div class="statCard">
+              <span class="statNumber">12</span>
+              <span class="statLabel">Commits</span>
+            </div>
+          </div>
+          <div class="repositories" id="githubRepos">
+            <div class="loading">Carregando repositórios...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboardSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Dashboard de Atividade</h3>
+        <div class="dashboardGrid">
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Commits este mês</h4>
+            </div>
+            <div class="metricValue">127</div>
+            <div class="metricChart">
+              <div class="chartBar" style="height: 80%"></div>
+              <div class="chartBar" style="height: 60%"></div>
+              <div class="chartBar" style="height: 90%"></div>
+              <div class="chartBar" style="height: 70%"></div>
+              <div class="chartBar" style="height: 85%"></div>
+            </div>
+            <div class="metricTrend">
+              <span class="trendUp">↗ +15%</span>
+              <span>vs mês anterior</span>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Linguagens mais usadas</h4>
+            </div>
+            <div class="languageChart">
+              <div class="langItem">
+                <span class="langName">TypeScript</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 40%"></div>
+                </div>
+                <span class="langPercent">40%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Python</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 30%"></div>
+                </div>
+                <span class="langPercent">30%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Rust</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 20%"></div>
+                </div>
+                <span class="langPercent">20%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Go</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 10%"></div>
+                </div>
+                <span class="langPercent">10%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Atividade GitHub</h4>
+            </div>
+            <div class="githubStats">
+              <div class="githubStat">
+                <span class="statNumber">46</span>
+                <span class="statLabel">Repositórios</span>
+              </div>
+              <div class="githubStat">
+                <span class="statNumber">4</span>
+                <span class="statLabel">Stars</span>
+              </div>
+              <div class="githubStat">
+                <span class="statNumber">7</span>
+                <span class="statLabel">Seguidores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Projetos Concluídos</h4>
+            </div>
+            <div class="projectStats">
+              <div class="projectStat">
+                <span class="statNumber">12</span>
+                <span class="statLabel">Este ano</span>
+              </div>
+              <div class="projectStat">
+                <span class="statNumber">6</span>
+                <span class="statLabel">Em andamento</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Atividade Semanal</h4>
+            </div>
+            <div class="weeklyChart">
+              <div class="weekDay">
+                <span class="dayName">Seg</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 60%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Ter</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 80%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Qua</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 45%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Qui</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 90%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Sex</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 70%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Sáb</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 30%"></div>
+                </div>
+              </div>
+              <div class="weekDay">
+                <span class="dayName">Dom</span>
+                <div class="dayBar">
+                  <div class="dayFill" style="height: 20%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Contribuições por Mês</h4>
+            </div>
+            <div class="monthlyChart">
+              <div class="monthBar">
+                <span class="monthName">Jan</span>
+                <div class="monthFill" style="width: 40%"></div>
+                <span class="monthValue">24</span>
+              </div>
+              <div class="monthBar">
+                <span class="monthName">Fev</span>
+                <div class="monthFill" style="width: 60%"></div>
+                <span class="monthValue">36</span>
+              </div>
+              <div class="monthBar">
+                <span class="monthName">Mar</span>
+                <div class="monthFill" style="width: 80%"></div>
+                <span class="monthValue">48</span>
+              </div>
+              <div class="monthBar">
+                <span class="monthName">Abr</span>
+                <div class="monthFill" style="width: 70%"></div>
+                <span class="monthValue">42</span>
+              </div>
+              <div class="monthBar">
+                <span class="monthName">Mai</span>
+                <div class="monthFill" style="width: 90%"></div>
+                <span class="monthValue">54</span>
+              </div>
+              <div class="monthBar">
+                <span class="monthName">Jun</span>
+                <div class="monthFill" style="width: 100%"></div>
+                <span class="monthValue">60</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Stack Tecnológico</h4>
+            </div>
+            <div class="techStack">
+              <div class="techItem">
+                <span class="techName">Frontend</span>
+                <div class="techProgress">
+                  <div class="techBar" style="width: 85%"></div>
+                </div>
+                <span class="techPercent">85%</span>
+              </div>
+              <div class="techItem">
+                <span class="techName">Backend</span>
+                <div class="techProgress">
+                  <div class="techBar" style="width: 90%"></div>
+                </div>
+                <span class="techPercent">90%</span>
+              </div>
+              <div class="techItem">
+                <span class="techName">Database</span>
+                <div class="techProgress">
+                  <div class="techBar" style="width: 75%"></div>
+                </div>
+                <span class="techPercent">75%</span>
+              </div>
+              <div class="techItem">
+                <span class="techName">DevOps</span>
+                <div class="techProgress">
+                  <div class="techBar" style="width: 70%"></div>
+                </div>
+                <span class="techPercent">70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Sobre Mim</h3>
+        <div class="aboutGrid">
+          <div class="aboutText">
+            <p>
+              Desenvolvedor apaixonado por tecnologia e soluções inovadoras. 
+              Atualmente trabalhando na Ippel Equipamentos em Piraí do Sul, 
+              desenvolvendo sistemas robustos e escaláveis.
+            </p>
+            <p>
+              Especializado em desenvolvimento full stack com foco em 
+              performance e experiência do usuário.
+            </p>
+          </div>
+          <div class="aboutStats">
+            <div class="statItem">
+              <span class="statNumber">46</span>
+              <span class="statLabel">Repositórios</span>
+            </div>
+            <div class="statItem">
+              <span class="statNumber">4</span>
+              <span class="statLabel">Stars</span>
+            </div>
+            <div class="statItem">
+              <span class="statNumber">7</span>
+              <span class="statLabel">Seguidores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="formationSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Formação</h3>
+        <div class="formationCard">
+          <h4>Engenharia de Software</h4>
+          <p class="institution">Estácio</p>
+          <p class="period">2025 - 2029</p>
+          <p class="description">
+            Graduação em Engenharia de Software com foco em desenvolvimento de sistemas, 
+            arquitetura de software e metodologias ágeis.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerWrap">
+    <div class="footerContent">
+      <div class="footerGrid">
+        <div class="footerSection">
+          <h4>Gabriel Garcia</h4>
+          <p>Desenvolvedor Full Stack</p>
+          <p>Especialista em TypeScript, Python e Rust</p>
+        </div>
+        
+        <div class="footerSection">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footerSection">
+          <h4>Redes Sociais</h4>
+          <div class="socialLinks">
+            <a href="https://github.com/Gabriell12321" target="_blank" class="socialLink">GitHub</a>
+            <a href="https://www.linkedin.com/in/gabriel-garcia-dev" target="_blank" class="socialLink">LinkedIn</a>
+          </div>
+        </div>
+        
+        <div class="footerSection">
+          <h4>Contato</h4>
+          <p>gargarciademello@gmail.com</p>
+          <p>(42) 99823-9179</p>
+          <p> Piraí do Sul, PR</p>
+        </div>
+      </div>
+      
+      <div class="footerBottom">
+        <p>&copy; 2025 Gabriel Garcia. Todos os direitos reservados.</p>
+        <p>Desenvolvido com  por Gabriel Garcia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Bot -->
+  <div class="chatBot" id="chatBot">
+    <div class="chatHeader">
+      <h4>Assistente Virtual</h4>
+      <button class="closeChat">×</button>
+    </div>
+    <div class="chatMessages">
+      <div class="message bot">Olá! Como posso ajudar?</div>
+    </div>
+    <div class="chatInput">
+      <input type="text" placeholder="Digite sua mensagem...">
+      <button>Enviar</button>
+    </div>
+  </div>
+
+  <script src="ts/main.js"></script>
+</body>
+</html>

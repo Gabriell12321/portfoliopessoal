@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Gabriel Garcia</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="headerWrap">
+    <nav class="navBox">
+      <div class="logoBox">
+        <a href="index.html">
+          <h1>Gabriel Garcia</h1>
+        </a>
+      </div>
+      
+      <button class="menuToggle" id="menuToggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="navList" id="navList">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mais</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="certificacoes.html">Certificações</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainBox">
+    <section class="blogSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Blog & Aprendizado</h3>
+        <div class="blogGrid">
+          <article class="blogPost">
+            <div class="blogImage">
+              <img src="https://via.placeholder.com/400x200/1a1a1a/ffffff?text=Rust+Performance" alt="Rust Performance">
+            </div>
+            <div class="blogContent">
+              <h4>Como otimizei meu código Rust</h4>
+              <p class="blogDate">15 Jan 2025</p>
+              <p class="blogExcerpt">
+                Dicas práticas para melhorar performance em Rust, incluindo 
+                memory management e otimizações de compilação.
+              </p>
+              <div class="blogTags">
+                <span class="blogTag">Rust</span>
+                <span class="blogTag">Performance</span>
+                <span class="blogTag">Otimização</span>
+              </div>
+              <a href="#" class="blogLink">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="blogPost">
+            <div class="blogImage">
+              <img src="https://via.placeholder.com/400x200/1a1a1a/ffffff?text=TypeScript+Tips" alt="TypeScript Tips">
+            </div>
+            <div class="blogContent">
+              <h4>TypeScript: Dicas Avançadas</h4>
+              <p class="blogDate">10 Jan 2025</p>
+              <p class="blogExcerpt">
+                Explorando recursos avançados do TypeScript como generics, 
+                utility types e pattern matching.
+              </p>
+              <div class="blogTags">
+                <span class="blogTag">TypeScript</span>
+                <span class="blogTag">JavaScript</span>
+                <span class="blogTag">Dicas</span>
+              </div>
+              <a href="#" class="blogLink">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="blogPost">
+            <div class="blogImage">
+              <img src="https://via.placeholder.com/400x200/1a1a1a/ffffff?text=Python+ML" alt="Python ML">
+            </div>
+            <div class="blogContent">
+              <h4>Machine Learning com Python</h4>
+              <p class="blogDate">5 Jan 2025</p>
+              <p class="blogExcerpt">
+                Introdução ao machine learning usando Python, pandas e scikit-learn 
+                para análise de dados.
+              </p>
+              <div class="blogTags">
+                <span class="blogTag">Python</span>
+                <span class="blogTag">Machine Learning</span>
+                <span class="blogTag">Data Science</span>
+              </div>
+              <a href="#" class="blogLink">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="blogPost">
+            <div class="blogImage">
+              <img src="https://via.placeholder.com/400x200/1a1a1a/ffffff?text=FastAPI+Backend" alt="FastAPI Backend">
+            </div>
+            <div class="blogContent">
+              <h4>Construindo APIs com FastAPI</h4>
+              <p class="blogDate">1 Jan 2025</p>
+              <p class="blogExcerpt">
+                Guia completo para criar APIs REST modernas e eficientes 
+                usando FastAPI e Python.
+              </p>
+              <div class="blogTags">
+                <span class="blogTag">FastAPI</span>
+                <span class="blogTag">Python</span>
+                <span class="blogTag">API</span>
+              </div>
+              <a href="#" class="blogLink">Ler mais</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timelineSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Minha Jornada</h3>
+        <div class="timeline">
+          <div class="timelineItem">
+            <div class="timelineDate">2025</div>
+            <div class="timelineContent">
+              <h4>Portfólio Avançado</h4>
+              <p>Desenvolvimento de portfólio com múltiplas funcionalidades e integrações</p>
+            </div>
+          </div>
+          <div class="timelineItem">
+            <div class="timelineDate">2024</div>
+            <div class="timelineContent">
+              <h4>Ippel Equipamentos</h4>
+              <p>Desenvolvedor Full Stack - Sistemas robustos e escaláveis</p>
+            </div>
+          </div>
+          <div class="timelineItem">
+            <div class="timelineDate">2023</div>
+            <div class="timelineContent">
+              <h4>Projeto Agrinho</h4>
+              <p>Desenvolvimento de website para agricultura sustentável</p>
+            </div>
+          </div>
+          <div class="timelineItem">
+            <div class="timelineDate">2022</div>
+            <div class="timelineContent">
+              <h4>Primeiros Projetos</h4>
+              <p>Início da jornada em desenvolvimento web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerWrap">
+    <div class="footerContent">
+      <p>&copy; 2025 Gabriel Garcia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="ts/main.ts"></script>
+</body>
+</html>

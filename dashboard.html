@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Gabriel Garcia</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="headerWrap">
+    <nav class="navBox">
+      <div class="logoBox">
+        <a href="index.html">
+          <h1>Gabriel Garcia</h1>
+        </a>
+      </div>
+      
+      <button class="menuToggle" id="menuToggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="navList" id="navList">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mais</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="certificacoes.html">Certificações</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainBox">
+    <section class="dashboardSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Dashboard de Atividade</h3>
+        <div class="dashboardGrid">
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Commits este mês</h4>
+            </div>
+            <div class="metricValue">127</div>
+            <div class="metricChart">
+              <div class="chartBar" style="height: 80%"></div>
+              <div class="chartBar" style="height: 60%"></div>
+              <div class="chartBar" style="height: 90%"></div>
+              <div class="chartBar" style="height: 70%"></div>
+              <div class="chartBar" style="height: 85%"></div>
+            </div>
+            <div class="metricTrend">
+              <span class="trendUp">↗ +15%</span>
+              <span>vs mês anterior</span>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Linguagens mais usadas</h4>
+            </div>
+            <div class="languageChart">
+              <div class="langItem">
+                <span class="langName">TypeScript</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 40%"></div>
+                </div>
+                <span class="langPercent">40%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Python</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 30%"></div>
+                </div>
+                <span class="langPercent">30%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Rust</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 20%"></div>
+                </div>
+                <span class="langPercent">20%</span>
+              </div>
+              <div class="langItem">
+                <span class="langName">Go</span>
+                <div class="langBar">
+                  <div class="langFill" style="width: 10%"></div>
+                </div>
+                <span class="langPercent">10%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Atividade GitHub</h4>
+            </div>
+            <div class="githubStats">
+              <div class="githubStat">
+                <span class="statNumber">46</span>
+                <span class="statLabel">Repositórios</span>
+              </div>
+              <div class="githubStat">
+                <span class="statNumber">4</span>
+                <span class="statLabel">Stars</span>
+              </div>
+              <div class="githubStat">
+                <span class="statNumber">7</span>
+                <span class="statLabel">Seguidores</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metricCard">
+            <div class="metricHeader">
+              <h4>Projetos Concluídos</h4>
+            </div>
+            <div class="projectStats">
+              <div class="projectStat">
+                <span class="statNumber">12</span>
+                <span class="statLabel">Este ano</span>
+              </div>
+              <div class="projectStat">
+                <span class="statNumber">6</span>
+                <span class="statLabel">Em andamento</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="activityMapSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Mapa de Calor GitHub</h3>
+        <div class="activityMap">
+          <div class="calendar">
+            <div class="calendarHeader">
+              <span>2024</span>
+              <span>Contribuições</span>
+            </div>
+            <div class="calendarGrid">
+              <!-- Grid de 365 dias representando commits -->
+              <div class="day" data-level="0"></div>
+              <div class="day" data-level="1"></div>
+              <div class="day" data-level="2"></div>
+              <div class="day" data-level="3"></div>
+              <div class="day" data-level="4"></div>
+              <!-- Mais dias... -->
+            </div>
+            <div class="calendarLegend">
+              <span>Menos</span>
+              <div class="legendColors">
+                <div class="legendColor" style="background: #ebedf0"></div>
+                <div class="legendColor" style="background: #c6e48b"></div>
+                <div class="legendColor" style="background: #7bc96f"></div>
+                <div class="legendColor" style="background: #239a3b"></div>
+                <div class="legendColor" style="background: #196127"></div>
+              </div>
+              <span>Mais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recentActivitySection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Atividade Recente</h3>
+        <div class="activityList">
+          <div class="activityItem">
+            <div class="activityContent">
+              <h4>Commit em portifolio</h4>
+              <p>Adicionada nova funcionalidade de dashboard</p>
+              <span class="activityTime">2 horas atrás</span>
+            </div>
+          </div>
+          <div class="activityItem">
+            <div class="activityContent">
+              <h4>Novo repositório criado</h4>
+              <p>rust-performance-optimization</p>
+              <span class="activityTime">1 dia atrás</span>
+            </div>
+          </div>
+          <div class="activityItem">
+            <div class="activityContent">
+              <h4>Star recebido</h4>
+              <p>Projeto "Meus Certificados" ganhou uma estrela</p>
+              <span class="activityTime">3 dias atrás</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerWrap">
+    <div class="footerContent">
+      <p>&copy; 2025 Gabriel Garcia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="ts/main.ts"></script>
+</body>
+</html>

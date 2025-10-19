@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Gabriel Garcia</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="headerWrap">
+    <nav class="navBox">
+      <div class="logoBox">
+        <a href="index.html">
+          <h1>Gabriel Garcia</h1>
+        </a>
+      </div>
+      
+      <button class="menuToggle" id="menuToggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      
+      <ul class="navList" id="navList">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html" class="active">Projetos</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Mais</a>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="certificacoes.html">Certificações</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainBox">
+    <!-- Seção de Visão Geral -->
+    <section class="projectsOverview">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Meus Projetos</h3>
+        <p class="sectionDescription">
+          Explore meus projetos desenvolvidos ao longo da jornada como desenvolvedor. 
+          Destaque especial para o <strong>Painel RNC - Ippel Equipamentos</strong>, 
+          um sistema inovador que integra 12 linguagens de programação diferentes 
+          em uma arquitetura de microserviços.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projeto Principal: Painel RNC - Ippel Equipamentos -->
+    <section class="projectDetail featuredProject">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Painel RNC - Ippel Equipamentos</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2025</span>
+            <span class="projectStatus featured">Projeto Principal</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p><strong>Painel RNC</strong> é um sistema desenvolvido especificamente 
+            para a Ippel Equipamentos, focado no controle e gestão de não conformidades para o sistema de qualidade. 
+            O projeto integra múltiplas tecnologias e linguagens de programação para criar uma solução robusta e escalável 
+            que garante a conformidade e qualidade dos processos industriais.</p>
+            
+            <h4>Objetivos e Funcionalidades</h4>
+            <ul>
+              <li><strong>Gestão de Não Conformidades:</strong> Sistema completo para registro, acompanhamento e resolução de não conformidades</li>
+              <li><strong>Controle de Qualidade:</strong> Interface para gestão do sistema de qualidade e processos industriais</li>
+              <li><strong>Integração Multi-linguagem:</strong> Serviços em Python, Julia, Go, Kotlin, Swift, Scala, Nim, V, Haskell, Zig, Crystal, Deno</li>
+              <li><strong>Relatórios de Qualidade:</strong> Geração automática de relatórios de conformidade e não conformidades</li>
+              <li><strong>Analytics de Qualidade:</strong> Análise estatística de indicadores de qualidade e tendências</li>
+            </ul>
+            
+            <h4>Arquitetura Multi-Serviços</h4>
+            <ol>
+              <li><strong>Flask (Python):</strong> Servidor principal e API REST - Gerencia todas as requisições, autenticação e coordenação dos microserviços</li>
+              <li><strong>Julia Analytics:</strong> Análise estatística avançada e processamento de dados - Gera insights e métricas de qualidade e não conformidades (porta 8082)</li>
+              <li><strong>Go Reports:</strong> Geração de relatórios PDF em alta performance - Cria relatórios de qualidade, não conformidades e documentos oficiais (porta 8083)</li>
+              <li><strong>Kotlin Utils:</strong> Geração de QR codes para certificados - Cria códigos QR únicos para validação rápida (porta 8084)</li>
+              <li><strong>Swift Tools:</strong> Criptografia SHA256 - Implementa hash seguro para validação de integridade dos certificados (porta 8085)</li>
+              <li><strong>Scala Tools:</strong> Codificação Base64 - Converte dados binários para texto seguro para transmissão (porta 8086)</li>
+              <li><strong>Nim Tools:</strong> Geração de UUIDs e tokens - Cria identificadores únicos e tokens de autenticação (porta 8087)</li>
+              <li><strong>V Tools:</strong> Geração de slugs - Cria URLs amigáveis e identificadores legíveis (porta 8088)</li>
+              <li><strong>Haskell Tools:</strong> Algoritmo Levenshtein - Calcula distância entre strings para validação de similaridade (porta 8089)</li>
+              <li><strong>Zig Tools:</strong> Hash XXH3 - Algoritmo de hash ultra-rápido para indexação e busca (porta 8090)</li>
+              <li><strong>Crystal Tools:</strong> Criptografia SHA256 - Implementação alternativa de hash para redundância (porta 8091)</li>
+              <li><strong>Deno Tools:</strong> Codificação/decodificação de URLs - Processa URLs seguras e parâmetros de requisição (porta 8092)</li>
+            </ol>
+            
+            <h4>Integração Multi-Linguagem Detalhada</h4>
+            <div class="serviceIntegration">
+              <div class="serviceGroup">
+                <h5>Serviços de Processamento</h5>
+                <ul>
+                  <li><strong>Python (Flask):</strong> Orquestração principal, API REST, autenticação JWT</li>
+                  <li><strong>Julia:</strong> Análise estatística, machine learning, processamento de big data</li>
+                  <li><strong>Go:</strong> Geração de PDFs, relatórios, alta performance e concorrência</li>
+                </ul>
+              </div>
+              
+              <div class="serviceGroup">
+                <h5>Serviços de Segurança</h5>
+                <ul>
+                  <li><strong>Swift:</strong> Criptografia SHA256, validação de integridade</li>
+                  <li><strong>Crystal:</strong> Hash SHA256 alternativo, redundância de segurança</li>
+                  <li><strong>Zig:</strong> Hash XXH3 ultra-rápido, indexação e busca</li>
+                </ul>
+              </div>
+              
+              <div class="serviceGroup">
+                <h5>Serviços Utilitários</h5>
+                <ul>
+                  <li><strong>Kotlin:</strong> Geração de QR codes, validação móvel</li>
+                  <li><strong>Scala:</strong> Codificação Base64, transmissão segura</li>
+                  <li><strong>Nim:</strong> UUIDs únicos, tokens de autenticação</li>
+                  <li><strong>V:</strong> Slugs amigáveis, URLs legíveis</li>
+                  <li><strong>Deno:</strong> Processamento de URLs, parâmetros seguros</li>
+                </ul>
+              </div>
+              
+              <div class="serviceGroup">
+                <h5>Serviços de Algoritmos</h5>
+                <ul>
+                  <li><strong>Haskell:</strong> Algoritmo Levenshtein, validação de similaridade</li>
+                </ul>
+              </div>
+            </div>
+            
+            <h4>Características Técnicas</h4>
+            <ul>
+              <li><strong>Microserviços:</strong> Arquitetura distribuída com 12 serviços especializados em qualidade</li>
+              <li><strong>Multi-linguagem:</strong> Integração de 12 linguagens diferentes para máxima performance</li>
+              <li><strong>Docker:</strong> Containerização completa do sistema de qualidade</li>
+              <li><strong>TypeScript:</strong> Frontend moderno para interface de gestão de não conformidades</li>
+              <li><strong>Email Integration:</strong> Sistema de notificações automáticas para alertas de qualidade</li>
+            </ul>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">Python</span>
+              <span class="techTag">Flask</span>
+              <span class="techTag">TypeScript</span>
+              <span class="techTag">Julia</span>
+              <span class="techTag">Go</span>
+              <span class="techTag">Kotlin</span>
+              <span class="techTag">Swift</span>
+              <span class="techTag">Scala</span>
+              <span class="techTag">Nim</span>
+              <span class="techTag">V</span>
+              <span class="techTag">Haskell</span>
+              <span class="techTag">Zig</span>
+              <span class="techTag">Crystal</span>
+              <span class="techTag">Deno</span>
+              <span class="techTag">Docker</span>
+              <span class="techTag">Rust</span>
+              <span class="techTag">C++</span>
+            </div>
+            
+            <h4>Estrutura do Projeto</h4>
+            <ul>
+              <li><strong>Backend Principal:</strong> Flask (Python) - API REST para gestão de qualidade</li>
+              <li><strong>Frontend:</strong> TypeScript compilado para interface de não conformidades</li>
+              <li><strong>Serviços:</strong> 12 microserviços especializados em diferentes linguagens</li>
+              <li><strong>Docker:</strong> Containerização completa do sistema de qualidade</li>
+              <li><strong>Email:</strong> Sistema de notificações para alertas de qualidade</li>
+              <li><strong>Relatórios:</strong> Geração automática de relatórios de conformidade em PDF</li>
+            </ul>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/Painel-Rnc-Ippel-Equipamentos" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+            <a href="#" class="btnSecondary">Documentação Técnica</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Métricas do Painel RNC -->
+    <section class="rncMetrics">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">Impacto e Métricas do Painel RNC</h3>
+        <div class="metricsGrid">
+          <div class="metricCard">
+            <div class="metricNumber">12</div>
+            <div class="metricLabel">Linguagens Integradas</div>
+            <div class="metricDescription">Python, Julia, Go, Kotlin, Swift, Scala, Nim, V, Haskell, Zig, Crystal, Deno</div>
+          </div>
+          <div class="metricCard">
+            <div class="metricNumber">76</div>
+            <div class="metricLabel">Commits</div>
+            <div class="metricDescription">Total de commits no repositório GitHub</div>
+          </div>
+          <div class="metricCard">
+            <div class="metricNumber">12</div>
+            <div class="metricLabel">Microserviços</div>
+            <div class="metricDescription">Serviços distribuídos em diferentes linguagens</div>
+          </div>
+          <div class="metricCard">
+            <div class="metricNumber">80.6%</div>
+            <div class="metricLabel">Python</div>
+            <div class="metricDescription">Linguagem principal do projeto</div>
+          </div>
+          <div class="metricCard">
+            <div class="metricNumber">100%</div>
+            <div class="metricLabel">Dockerizado</div>
+            <div class="metricDescription">Containerização completa do sistema</div>
+          </div>
+          <div class="metricCard">
+            <div class="metricNumber">IPPEL</div>
+            <div class="metricLabel">Cliente</div>
+            <div class="metricDescription">Desenvolvido para Ippel Equipamentos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 1: Meus Certificados -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Meus Certificados</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2024</span>
+            <span class="projectStatus">Concluído</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Plataforma web desenvolvida para exibição organizada de certificados profissionais. 
+            O projeto foi criado para centralizar e apresentar de forma elegante todos os 
+            certificados obtidos durante a jornada de aprendizado.</p>
+            
+            <h4>Objetivos Alcançados</h4>
+            <ul>
+              <li>Interface limpa e responsiva para exibição de certificados</li>
+              <li>Sistema de categorização por área de conhecimento</li>
+              <li>Design otimizado para diferentes dispositivos</li>
+              <li>Navegação intuitiva entre certificados</li>
+            </ul>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">HTML5</span>
+              <span class="techTag">CSS3</span>
+              <span class="techTag">JavaScript</span>
+              <span class="techTag">Responsive Design</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/Meus-Certificados" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 2: Jardim Cotoncio -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Jardim Cotoncio</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2023</span>
+            <span class="projectStatus">Concluído</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Website desenvolvido para o projeto Agrinho 2023, focado em agricultura sustentável. 
+            O projeto aborda temas de sustentabilidade ambiental e práticas agrícolas responsáveis, 
+            apresentando informações de forma didática e acessível.</p>
+            
+            <h4>Etapas de Desenvolvimento</h4>
+            <ol>
+              <li><strong>Pesquisa e Planejamento:</strong> Estudo sobre agricultura sustentável</li>
+              <li><strong>Design da Interface:</strong> Criação de wireframes e protótipos</li>
+              <li><strong>Desenvolvimento Frontend:</strong> Implementação com HTML, CSS e JavaScript</li>
+              <li><strong>Testes e Otimização:</strong> Validação de funcionalidades e performance</li>
+              <li><strong>Deploy e Apresentação:</strong> Publicação e apresentação no Agrinho</li>
+            </ol>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">HTML5</span>
+              <span class="techTag">CSS3</span>
+              <span class="techTag">JavaScript</span>
+              <span class="techTag">Bootstrap</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/Jardimcotoncio-Projeto-AGRINHO2023" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 3: Portfólio Pessoal -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Portfólio Pessoal</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2023</span>
+            <span class="projectStatus">Concluído</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Website pessoal desenvolvido com SCSS para demonstrar habilidades em design e desenvolvimento. 
+            O projeto serviu como base para o portfólio atual, explorando diferentes abordagens de design 
+            e implementação de funcionalidades interativas.</p>
+            
+            <h4>Funcionalidades Implementadas</h4>
+            <ul>
+              <li>Sistema de navegação responsivo</li>
+              <li>Seção de projetos com filtros</li>
+              <li>Formulário de contato funcional</li>
+              <li>Animações CSS personalizadas</li>
+              <li>Otimização para SEO</li>
+            </ul>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">SCSS</span>
+              <span class="techTag">HTML5</span>
+              <span class="techTag">CSS3</span>
+              <span class="techTag">JavaScript</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/gabriel.github.io" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 4: Bot Automatizado -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Bot Automatizado</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2024</span>
+            <span class="projectStatus">Em Desenvolvimento</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Automação desenvolvida em JavaScript para otimizar processos e tarefas repetitivas. 
+            O bot foi criado para automatizar tarefas específicas, demonstrando conhecimento em 
+            automação e otimização de processos de trabalho.</p>
+            
+            <h4>Processo de Desenvolvimento</h4>
+            <ol>
+              <li><strong>Análise de Requisitos:</strong> Identificação de tarefas repetitivas</li>
+              <li><strong>Planejamento da Automação:</strong> Mapeamento de processos</li>
+              <li><strong>Desenvolvimento do Bot:</strong> Implementação em JavaScript/Node.js</li>
+              <li><strong>Testes e Validação:</strong> Verificação de funcionalidades</li>
+              <li><strong>Deploy e Monitoramento:</strong> Implementação e acompanhamento</li>
+            </ol>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">JavaScript</span>
+              <span class="techTag">Node.js</span>
+              <span class="techTag">Automation</span>
+              <span class="techTag">API Integration</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/BOT" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 5: Projeto IA -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Projeto IA</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2024</span>
+            <span class="projectStatus">Em Desenvolvimento</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Projeto de inteligência artificial explorando conceitos de machine learning e algoritmos. 
+            O projeto visa aplicar conhecimentos em IA para resolver problemas práticos e demonstrar 
+            competências em tecnologias emergentes.</p>
+            
+            <h4>Objetivos de Aprendizado</h4>
+            <ul>
+              <li>Compreensão de algoritmos de machine learning</li>
+              <li>Implementação de modelos de IA</li>
+              <li>Processamento de dados e análise</li>
+              <li>Otimização de performance de modelos</li>
+            </ul>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">Python</span>
+              <span class="techTag">TensorFlow</span>
+              <span class="techTag">Machine Learning</span>
+              <span class="techTag">Data Science</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321/IA" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="#" class="btnSecondary">Ver Demonstração</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto 6: Portfólio Atual -->
+    <section class="projectDetail">
+      <div class="sectionContent">
+        <div class="projectHeader">
+          <h3 class="projectTitle">Portfólio Atual</h3>
+          <div class="projectMeta">
+            <span class="projectDate">2025</span>
+            <span class="projectStatus">Em Desenvolvimento</span>
+          </div>
+        </div>
+        
+        <div class="projectContent">
+          <div class="projectDescription">
+            <h4>Descrição do Projeto</h4>
+            <p>Este portfólio desenvolvido com HTML, CSS e TypeScript, demonstrando habilidades modernas 
+            em desenvolvimento web. O projeto incorpora as melhores práticas de desenvolvimento e 
+            tecnologias atuais para criar uma experiência de usuário excepcional.</p>
+            
+            <h4>Características Técnicas</h4>
+            <ul>
+              <li>Arquitetura modular com TypeScript</li>
+              <li>Design responsivo e acessível</li>
+              <li>Integração com APIs externas</li>
+              <li>Sistema de cache e otimização</li>
+              <li>PWA (Progressive Web App)</li>
+            </ul>
+          </div>
+          
+          <div class="projectTech">
+            <h4>Tecnologias Utilizadas</h4>
+            <div class="techTags">
+              <span class="techTag">TypeScript</span>
+              <span class="techTag">HTML5</span>
+              <span class="techTag">CSS3</span>
+              <span class="techTag">PWA</span>
+              <span class="techTag">API Integration</span>
+            </div>
+          </div>
+          
+          <div class="projectLinks">
+            <a href="https://github.com/Gabriell12321" class="btnPrimary" target="_blank">
+              Ver Código no GitHub
+            </a>
+            <a href="index.html" class="btnSecondary">Ver Portfólio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="githubSection">
+      <div class="sectionContent">
+        <h3 class="sectionTitle">GitHub Stats</h3>
+        <div class="githubStats">
+          <div class="statCard">
+            <h4>46 Repositórios</h4>
+            <p>Projetos públicos no GitHub</p>
+          </div>
+          <div class="statCard">
+            <h4>4 Stars</h4>
+            <p>Reconhecimento da comunidade</p>
+          </div>
+          <div class="statCard">
+            <h4>7 Seguidores</h4>
+            <p>Conectando com outros desenvolvedores</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footerWrap">
+    <div class="footerContent">
+      <p>&copy; 2025 Gabriel Garcia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="ts/main.ts"></script>
+</body>
+</html>
